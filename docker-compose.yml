@@ -8,6 +8,6 @@ services:
     hostname: angular-docker
     tty: true
     volumes:
-      - .:/angular
+      - ./sites:/angular
     ports:
       - "4200:4200"
