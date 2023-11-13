@@ -9,3 +9,5 @@ services:
     tty: true
     volumes:
       - .:/angular
+    ports:
+      - "4200:4200"

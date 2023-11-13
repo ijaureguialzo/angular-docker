@@ -26,7 +26,7 @@ build:
 	@docker compose build --pull
 
 workspace:
-	@docker compose run --rm node /bin/bash
+	@docker compose run --rm --service-ports node /bin/bash
 
 clean:
 	@docker compose down -v --remove-orphans
