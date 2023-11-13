@@ -1,0 +1,11 @@
+services:
+  node:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - NODE_VERSION=${NODE_VERSION}
+    hostname: angular-docker
+    tty: true
+    volumes:
+      - .:/angular
